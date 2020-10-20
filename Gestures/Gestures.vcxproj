@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{27A995C1-4F03-4FA9-956E-50EE00A133D7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Gestures</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\OpenCV\opencv\build\include;C:\Users\Sunny\Desktop\Semester 6\Construction of Multi-Touch and Multi-User Interfaces\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\oscpack;C:\Users\Sunny\Desktop\Semester 6\Construction of Multi-Touch and Multi-User Interfaces\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\TUIO;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opencv_world411d.lib;ws2_32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\OpenCV\opencv\build\x64\vc15\lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\OpenCV\opencv\build\include;C:\Users\Sunny\Desktop\Semester 6\Construction of Multi-Touch and Multi-User Interfaces\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\oscpack;C:\Users\Sunny\Desktop\Semester 6\Construction of Multi-Touch and Multi-User Interfaces\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\TUIO;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\OpenCV\opencv\build\x64\vc15\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_world411d.lib;ws2_32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\oscpack\ip\IpEndpointName.cpp" />
+    <ClCompile Include="..\..\..\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\oscpack\ip\win32\NetworkingUtils.cpp" />
+    <ClCompile Include="..\..\..\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\oscpack\ip\win32\UdpSocket.cpp" />
+    <ClCompile Include="..\..\..\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\oscpack\osc\OscOutboundPacketStream.cpp" />
+    <ClCompile Include="..\..\..\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\oscpack\osc\OscPrintReceivedElements.cpp" />
+    <ClCompile Include="..\..\..\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\oscpack\osc\OscReceivedElements.cpp" />
+    <ClCompile Include="..\..\..\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\oscpack\osc\OscTypes.cpp" />
+    <ClCompile Include="..\..\..\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\TUIO\TuioClient.cpp" />
+    <ClCompile Include="..\..\..\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\TUIO\TuioTime.cpp" />
+    <ClCompile Include="GeometricRecognizer.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MyTuioListener.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\oscpack\ip\IpEndpointName.h" />
+    <ClInclude Include="..\..\..\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\oscpack\ip\NetworkingUtils.h" />
+    <ClInclude Include="..\..\..\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\oscpack\ip\PacketListener.h" />
+    <ClInclude Include="..\..\..\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\oscpack\ip\TimerListener.h" />
+    <ClInclude Include="..\..\..\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\oscpack\ip\UdpSocket.h" />
+    <ClInclude Include="..\..\..\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\oscpack\osc\MessageMappingOscPacketListener.h" />
+    <ClInclude Include="..\..\..\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\oscpack\osc\OscException.h" />
+    <ClInclude Include="..\..\..\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\oscpack\osc\OscHostEndianness.h" />
+    <ClInclude Include="..\..\..\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\oscpack\osc\OscOutboundPacketStream.h" />
+    <ClInclude Include="..\..\..\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\oscpack\osc\OscPacketListener.h" />
+    <ClInclude Include="..\..\..\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\oscpack\osc\OscPrintReceivedElements.h" />
+    <ClInclude Include="..\..\..\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\oscpack\osc\OscReceivedElements.h" />
+    <ClInclude Include="..\..\..\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\oscpack\osc\OscTypes.h" />
+    <ClInclude Include="..\..\..\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\TUIO\TuioClient.h" />
+    <ClInclude Include="..\..\..\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\TUIO\TuioListener.h" />
+    <ClInclude Include="..\..\..\mt_framework_2019_cv.4.11\mt_framework_2019_cv.4.11\TUIO\TuioTime.h" />
+    <ClInclude Include="GeometricRecognizer.h" />
+    <ClInclude Include="GeometricRecognizerTypes.h" />
+    <ClInclude Include="GesturePath.h" />
+    <ClInclude Include="GestureTemplate.h" />
+    <ClInclude Include="MyTuioListener.h" />
+    <ClInclude Include="PathWriter.h" />
+    <ClInclude Include="SampleGestures.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
